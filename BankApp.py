@@ -25,15 +25,6 @@ def input_float(prompt):
             print("Invalid input. Please enter a valid number.")
 
 
-def input_int(prompt):
-    while True:
-        try:
-            value = int(input(prompt))
-            return value
-        except ValueError:
-            print("Invalid input. Please enter a valid integer.")
-
-
 def login(accounts):
     account_number = input("Enter your account number: ")
     if account_number in accounts:
